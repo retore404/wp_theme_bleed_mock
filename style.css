@@ -6,10 +6,24 @@
       1fr;
 }
 
+.grid-container-index{
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-columns:
+      1fr
+      1fr
+      1fr;
+}
+
 .grid-container > * {
     grid-column: 2 / 3;
 }
 
 .header-title{
     border-bottom: solid 1px black;
+}
+
+.post-thumbnail{
+    width: 100%;
 }
