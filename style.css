@@ -1,3 +1,7 @@
+p {
+    font-size: 0.875em;
+}
+
 .grid-container{
     display: grid;
     grid-template-columns:
@@ -18,11 +22,29 @@
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
 }
 
+.grid-container-article{
+    display:grid;
+    grid-template-columns: 1fr min(35em, 100%) 1fr;
+}
+
+.grid-container-article > *{
+    grid-column: 2 / 3;
+}
+
+.grid-container-article > .img-container {
+    width: 100%;
+    grid-column: 1 / 4;
+}
+
 
 .header-title{
     border-bottom: solid 1px black;
 }
 
 .post-thumbnail{
+    width: 100%;
+}
+
+img {
     width: 100%;
 }
